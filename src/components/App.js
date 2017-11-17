@@ -28,7 +28,7 @@ class App extends Component{
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
-    }, 20);
+    }, 35);
   }
 
   unfade(element) {
@@ -41,7 +41,7 @@ class App extends Component{
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1;
-    }, 20);
+    }, 35);
   }
 
   render(){
@@ -60,9 +60,9 @@ class App extends Component{
           />
         </div>
         <div className = "container">
-          <button onClick={this.toggleContainer.bind(this,"breakfastContainer")} id="breakfastBtn" type="button" className="btn btn-primary btn-lg">Breakfast</button>
-          <button onClick={this.toggleContainer.bind(this,"lunchContainer")} id="lunchBtn" type="button" className="btn btn-primary btn-lg">Lunch</button>
-          <button onClick={this.toggleContainer.bind(this,"dinnerContainer")} id="dinnerBtn" type="button" className="btn btn-primary btn-lg">Dinner</button>
+          <button onClick={this.toggleContainer.bind(this,"breakfastContainer")} id="breakfastBtn" type="button" className="btn btn-primary btn-lg toggleButton">Breakfast</button>
+          <button onClick={this.toggleContainer.bind(this,"lunchContainer")} id="lunchBtn" type="button" className="btn btn-primary btn-lg toggleButton">Lunch</button>
+          <button onClick={this.toggleContainer.bind(this,"dinnerContainer")} id="dinnerBtn" type="button" className="btn btn-primary btn-lg toggleButton">Dinner</button>
         </div>
         <div id = "breakfastContainer" className = "container">
           <MealCategory mealType = "Breakfast" foodData={this.props.breakfastFoods}/>

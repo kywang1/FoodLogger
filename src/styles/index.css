@@ -5,14 +5,14 @@ body{
 }
 
 h1{
-font-weight: bold;
+  font-weight: bold;
 }
 
 #appTitle{
   text-align: center;
   font-size: 50px;
   margin-bottom: 25px;
-  color:#000099;
+  color:#4286f4;
 }
 
 #foodInput{
@@ -36,6 +36,7 @@ font-weight: bold;
   width:125px;
   dispaly:block;
   margin-top: 5px;
+  font-size: 16px;
 }
 
 #addBar{
@@ -64,4 +65,12 @@ td{
 
 th{
   font-size:20px;
+}
+
+
+.toggleButton{
+  height: 50px;
+  margin-right: 20px;
+  font-size:19px;
+  width:100px;
 }
