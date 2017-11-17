@@ -19,12 +19,10 @@ function randomIntFromInterval(min, max) {
 
 function getFoodData(term, servingSize,storageType) {
     let foodData;
-    console.log(globalFoodStorage);
     if (globalFoodStorage[storageType][term]) { //if food already has been previously added
         globalFoodStorage[storageType][term].servingSize+= servingSize;
         return globalFoodStorage[storageType][term];
     } else {
-        console.log("good not found");
         foodData = {
             food: term,
             servingSize: servingSize,
@@ -36,7 +34,6 @@ function getFoodData(term, servingSize,storageType) {
         foodData.id = Object.keys(globalFoodStorage[storageType]).length + 1;
         globalFoodStorage[storageType][term] = foodData;
     }
-    console.log(foodData);
     return foodData;
     // foodData.id = `${foodData.calories}${foodData.protein}${foodData.fats}${foodData.carbs}`;
     // return foodData;
