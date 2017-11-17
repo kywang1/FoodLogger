@@ -81,10 +81,18 @@ class NutrionalOverview extends Component{
     )
   }
 
+  getToday(){
+    let dateObj = new Date();
+    let day = dateObj.getDate();
+    let month =dateObj.getMonth() + 1;
+    let year = 2017;
+    return `${month}/${day}/${year}`;
+  }
+
   render(){
     return (
       <div>
-        <h1>Nutrional Overview for the Day</h1>
+        <h1>Nutrional Overview for {this.getToday()}</h1>
         <table className="table">
           <thead>
             <tr>

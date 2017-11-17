@@ -67,10 +67,10 @@ class AddBar extends Component{
         </select>
         {/* <label>Choose Serving Size</label> */}
         <select id="servingSizeDropBar" className="form-control">
-          <option id = "oneServing">1</option>
-          <option id = "twoServing">2</option>
-          <option id = "threeServing">3</option>
-          <option id = "fourServing">4</option>
+          <option id = "oneServing">1 serving</option>
+          <option id = "twoServing">2 serving</option>
+          <option id = "threeServing">3 serving</option>
+          <option id = "fourServing">4 serving</option>
         </select>
           <button id="addButton" onClick = {this.setMealType} type = "submit" className = "btn btn-primary">
             Add Food

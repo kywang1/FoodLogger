@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import MealCategory from './meal_category';
 import AddBar from './add_bar';
 import NutrionalOverview from './nutrional_overview';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class App extends Component{
   toggleContainer(containerSelect){
@@ -45,7 +44,6 @@ class App extends Component{
   }
 
   render(){
-    let items = [1,2,3,4,5,6,7];
     return (
       <div>
         <h1 className = "display-2" id="appTitle">Welcome To Food Logger</h1>
