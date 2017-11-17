@@ -1,0 +1,67 @@
+body{
+  padding:0;
+  font-family:sans-serif;
+  font-family: CenturyGothic;
+}
+
+h1{
+font-weight: bold;
+}
+
+#appTitle{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  color:#000099;
+}
+
+#foodInput{
+  height:50px;
+  font-size: 25px;
+}
+
+#selectMeal{
+  width:110px;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+#servingSizeDropBar{
+  width:70px;
+  margin-top: 5px;
+  margin-right:2px;
+}
+
+#addButton{
+  width:125px;
+  dispaly:block;
+  margin-top: 5px;
+}
+
+#addBar{
+  width:70%;
+}
+
+.input-group-btn{
+  display:block;
+}
+
+table th,table td{
+    width:100px;
+}
+
+
+table tbody{
+  height:200px;
+  overflow:auto;
+  background-color: #e6f2ff;
+
+}
+
+td{
+   font-size:18px;
+}
+
+th{
+  font-size:20px;
+}
